@@ -1,0 +1,24 @@
+<div class="header d-flex">
+  <h1>Restaurant Reviews</h1>
+  <%= link_to new_restaurant_path do %>
+    <div class="add-restaurant d-flex">
+      <i class="fas fa-plus"></i>
+      <p> Add a restaurant </p>
+    </div>
+  <% end %>
+</div>
+
+<div class="all-restaurants">
+<ul class="list-group">
+  <% @restaurants.each do |restaurant| %>
+    <li class="list-group-item d-flex">
+      <%= restaurant.name %>
+      <%= link_to "See details", restaurant_path(restaurant), class: "btn btn-primary"%>
+    </li>
+  <% end %>
+</ul>
+
+</div>
+
+<div class="footer">
+</div>

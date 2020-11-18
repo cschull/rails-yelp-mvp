@@ -1,1 +1,57 @@
 // Specific CSS for your home-page
+.header {
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.add-restaurant {
+  display: inline-block;
+}
+
+p {
+  font-size: 20px;
+}
+
+.all-restaurants {
+  padding: 20px;
+  margin: 10px;
+}
+
+.list-group-item {
+  justify-content: space-between;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.btn {
+  border-radius: 5px;
+}
+
+.display {
+  padding: 40px;
+}
+
+.address {
+  color: grey;
+}
+
+.phone_number {
+  color: grey;
+}
+
+.contact-info {
+  justify-content: space-around;
+}
+
+.category {
+  color: grey;
+}
+
+.review {
+  padding: 20px;
+}
+
+.user-input {
+  border: 1px solid grey;
+  padding: 10px;
+}

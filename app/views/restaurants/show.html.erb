@@ -1,0 +1,35 @@
+<div class="display">
+  <div class="restaurant-info">
+    <h1><%= @restaurant.name %></h1>
+    <div class="category">
+      <h2><%= @restaurant.category %></h2>
+    </div>
+    <div class="contact-info d-flex">
+      <div class="address">
+        <p><%= @restaurant.address %></p>
+      </div>
+      <div class="phone_number">
+        <p><%= @restaurant.phone_number %></p>
+      </div>
+    </div>
+  </div>
+
+  <%= link_to "Add a review", new_restaurant_review_path(@restaurant), class: "btn btn-primary"%>
+
+
+  <div class="restaurant-reviews">
+    <% @restaurant.reviews.each do |review| %>
+      <ul class="list-group">
+        <li class="list-group-item d-flex">
+          <div class="review-content">
+            <%= review.content %>
+          </div>
+          <div class="rating">
+            <%= "Rating: #{review.rating}" %>
+          </div>
+        </li>
+      </ul>
+    <% end %>
+  </div>
+
+</div>

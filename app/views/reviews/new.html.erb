@@ -1,0 +1,18 @@
+<div class="review">
+  <h1>Let us know what you thought of <%= @restaurant.name %></h1>
+
+
+  <div class="user-input">
+    <%= form_for [@restaurant, @review], {class: "form-horizontal"} do |f| %>
+      <!-- [...] -->
+        <%= f.text_field :content, placeholder: "Loved it...Hated it...", class: "form-control" %>
+        <p>Rating 0 to 5</p>
+        <%= f.range_field :rating, in:0..5, step: 1, class: "rating-range" %>
+        <br>
+        <%= f.submit 'Submit review!' %>
+    <% end %>
+    <div class="container">
+      <span id="rateMe2"  class="empty-stars"></span>
+    </div>
+  </div>
+</div>

@@ -1,3 +1,24 @@
 // Place all the styles related to the Restaurant controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.header {
+  display: flex;
+}
+
+.add-restaurant {
+  display: inline-block;
+}
+
+p {
+  font-size: 120px;
+}
+
+.all-restaurants {
+  margin: 10px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
